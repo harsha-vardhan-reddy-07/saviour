@@ -1,0 +1,80 @@
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 20vw;
+    position: fixed;
+    top: 0;
+    right: 5vh;
+    height: 50px;
+    z-index: 7;
+}
+.profile{
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+    border: 2px solid #68caf4;
+    margin-top: 2px;
+}
+
+.btns{
+    width: 30px;
+    height: 30px;
+    color: #55585a;
+    cursor: pointer;
+}
+.Notifybtn{
+    width: 37px;
+    height: 37px;
+}
+.chatbtn{
+    width: 27px;
+    height: 27px;
+    padding-top: 5px;
+}
+.createPostbtn{
+    padding-top: 3px;
+}
+.btns :active{
+    color: #1393f5;
+}
+.homebtn{
+    color: #1393f5;
+}
+.navIcons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navIcons>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.r-button{
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+    background: linear-gradient(106.23deg, #68caf4, #1393f5 100%);
+}
+@media screen and (max-width: 900px) {
+    .Navbar{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Navbar{
+        width: 100vw;
+        padding-bottom: 10px;
+        position: fixed;
+        top: calc(100vh - 60px);
+        right: 0;
+        background-color: rgb(226, 242, 248);
+    }
+    .profile{
+        margin-right: 30px;
+    }
+    .homebtn{
+        margin-left: 30px;
+    }
+}

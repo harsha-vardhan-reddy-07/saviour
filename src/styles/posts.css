@@ -1,0 +1,212 @@
+
+.Postsection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50vw;
+    position: relative;
+    top: 10vh;
+    left: 24vw;
+    z-index: 4;
+    padding-bottom: 10vh;
+    
+}
+
+@media screen and (max-width: 900px){
+    .Postsection{
+    width: 92vw;
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Postsection{
+        width: 92vw;
+        position: absolute;
+        top: 10vh;
+        left: 4vw;
+        margin-top: 2vh;
+        }
+}
+
+.Post
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    gap: 1rem;
+    height: fit-content;
+    min-height: 85vh;
+    border: 1px solid rgb(188, 183, 183);
+
+}
+.postTop{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.userpic{
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #68caf4;
+}
+.usernameTop{
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    font-family: 'Padauk', sans-serif;
+}
+.foundOrLostNotify{
+    position: absolute;
+    right: 2vw;
+    font-size: 25px;
+}
+
+
+
+
+.postimg{
+    width: 100%;
+    height: clamp(50vh, 50vh, 70vh);
+    object-fit: cover;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+
+
+
+.postReact{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-left: 2vw;
+}
+.reactbtn{
+    font-size: 20px;
+    color: rgb(100, 171, 252);
+    cursor: pointer;
+}
+.supportbtn{
+    font-size: 20px;
+    cursor: pointer;
+}
+.detail, .supliconcol{
+    display: flex;
+    flex-direction: column;
+}
+.placeiconcol{
+    display: flex;
+    flex-direction: row; 
+    position: absolute;
+    right: 2vw;
+}
+.supportCount{
+    font-size: 0.8rem;
+    font-family: 'Kanit', sans-serif;
+}
+.place{
+    padding-left: 0.6rem;
+    font-size: 0.8rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.datacol{
+    display: flex;
+    flex-direction: row;
+}
+
+.detail{
+    margin-right: 1vw;
+    gap: 0.3rem;
+}
+
+.username{
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    top: -0.5vh;
+    padding-left: 1vw;
+    font-family: 'Padauk', sans-serif;
+}
+
+.desc, .identitydata{
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+
+.labeldata{
+    font-size: 1rem;
+    position: relative;
+    left: 0.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.datatitle{
+    font-weight: bold;
+    margin-left: 1vw;
+    font-family: 'Padauk', sans-serif;
+}
+
+
+.identitydataWithBtn, .descdataWithBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.viewMore{
+    width: 80px;
+    float: right;
+    position: relative;
+    left: 0vw;
+    border: none;
+    color: rgb(151, 156, 156);
+    background-color: rgba(220, 204, 220, 0);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.genpost-linkdiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vw;
+}
+.genPostLink{
+    font-size: 1rem;
+    color: #4ebff0;
+    text-decoration: none;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+@media screen and (max-width: 500px){
+    .Post{
+        min-height: 70vh;
+    }
+
+    .placeiconcol{
+        right: 4vw;
+    }
+
+    .genpost-linkdiv{
+        margin-left: 7vw;
+    }
+    .postimg{
+        min-height: 38vh;
+        max-height: 40vh;
+    }
+}
