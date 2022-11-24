@@ -7,14 +7,20 @@ import { TbNotification } from "react-icons/tb";
 import Profile from "../../img/profileImg.jpg";
 
 
-const Navbar = ({createPostToggle}) => {
+const Navbar = ({createPostToggle, setInputButtonsDisplay, setCreateInputType}) => {
+
+  const createPostBtnHandle = () =>{
+    createPostToggle();
+    setInputButtonsDisplay(true);
+    setCreateInputType('Na');
+  }
   
   return (
     <div className="Navbar">
       <div className="navIcons">
         <BiHomeAlt className="homebtn btns"  />
         <BsChatSquareText  className="chatbtn btns" />
-        <CgAddR className="createPostbtn btns" onClick={createPostToggle}  />
+        <CgAddR className="createPostbtn btns" onClick={createPostBtnHandle}  />
         <TbNotification className="Notifybtn btns" />
         <img className="profile btns" src={Profile} alt="" />
       </div>
@@ -28,3 +34,4 @@ const Navbar = ({createPostToggle}) => {
 };
 
 export default Navbar;
+

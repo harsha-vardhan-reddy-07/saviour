@@ -1,0 +1,127 @@
+.createPostCard{
+    z-index: 999;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 10vh;
+    left: 35vw;
+    width: 30vw;
+    height: fit-content;
+    max-height: 90vh;
+    background-color: rgb(246, 251, 254);
+    border: 1px solid #b4b6b8;
+}
+
+.closeCreatePost{
+    float: right;
+    position: relative;
+    top: 0vh;
+    right: 0vw;
+    color: rgb(106, 107, 107);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.createPostTitle{
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.createPostButtons{
+    display: block;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(160deg, #98defc, #1dabfd 100%);
+    border: 2px solid rgb(246, 251, 254);
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Padauk', sans-serif;
+    cursor: pointer;
+}
+
+.createPostButtons:hover{
+    border: 2px solid #68caf4;
+    background: #fff;
+    color: #68caf4;
+}
+
+#createPostInputContainer{
+    max-width: 20vh;
+}
+
+.createPostInput{
+    border: 1px solid #1dabfd;
+    max-width: 86%;
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    outline: none;
+    padding-left: 2%;
+    margin-left: 5.3%;
+}
+
+
+#createPostImage{
+    height: 30vh;
+}
+
+#createPostKidName, #createPostPetBreed{
+    width: 51%;
+}
+#createPostKidAge, #createPostPetAge{
+    width: 30%;
+    margin-left: 3%;
+}
+#createPostKidHeight, #createPostPetColor, #createPostGeneralLink{
+    width: 34%;
+}
+
+
+
+#createPostKidLocation{
+    width: 47%;
+    margin-left: 3%;
+}
+#createPostIdentity{
+    width: 60%;
+}
+#createPostType{
+    width: 23%;
+    margin-left: 3%;
+}
+#createPostUpload{
+    width: 25%;
+    margin: 4% 0 0 37%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .createPostCard{
+        top: 15vh;
+        left: 25vw;
+        width: 50vw;
+    }
+    .createPostButtons{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .createPostCard{
+        top: 15vh;
+        left: 4vw;
+        width: 83vw;
+        padding-bottom: 2rem;
+    }
+    .createPostButtons{
+        width: 73vw;
+        
+    }
+
+}
