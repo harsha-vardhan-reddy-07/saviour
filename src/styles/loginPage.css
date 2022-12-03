@@ -1,7 +1,6 @@
 .googleLoginBtn{
     position: absolute;
-    top: 30vh;
-    left: 30vw;
+    top: 12vh;
     cursor: pointer;
 }
 .loginPageHead{

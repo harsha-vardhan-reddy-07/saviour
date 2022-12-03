@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Comments from '../../components/Comments';
 import CreatePost from '../../components/CreatePosts';
 // import CreatePost from '../../components/CreatePost';
@@ -14,7 +14,20 @@ import { postsData } from '../../Data/postsData';
 // import Profilecard from '../../components/Profilecard';
 // import Suggestions from '../../components/Suggestions';
 
+import {UserAuth} from '../../Context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+
+
 function Home() {
+
+  const navigate = useNavigate();
+  const {user} = UserAuth();
+
+  useEffect(() => {
+    if (user == null){
+      navigate('/login');
+    }
+  },[user, navigate]);
 
   const [isCommentBoxOpen, setCommentBoxOpen] = useState(true);
   // for comment box toggling

@@ -116,7 +116,7 @@
       height: fit-content;
       opacity: 1;
       background-color: rgb(255, 247, 247);
-      z-index: 99;
+      
     }
   }
   @media screen and (max-width: 500px) {
@@ -126,6 +126,6 @@
       width: 92vw;
       opacity: 1;
       background-color: rgb(255, 247, 247);
-      z-index: 999;
+      z-index: 4;
     }
   }

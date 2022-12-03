@@ -10,7 +10,7 @@ import genpic from '../img/generalpic.jpg'
 export const postsData = [
     {   
         id: 1,
-        username: 'Edward',
+        username: 'Edwarduu',
         userpic: userimg1,
         postType: 'kid',
         foundOrLost:'found',

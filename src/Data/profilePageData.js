@@ -2,9 +2,7 @@ import kidpic from '../img/kid.jpg'
 import userimg from '../img/harsha.jpg'
 
 import petpic from '../img/dog.jpg'
-import userimg2 from '../img/user1.jpg'
 
-import userimg3 from '../img/user3.jpg';
 import genpic from '../img/generalpic.jpg'
 
 export const postsData = [

@@ -6,7 +6,23 @@
     flex-direction: row;
     font-size: 2rem;
     font-family: 'Padauk', sans-serif;
-    width: fit-content;
+    width: 100vw;
+}
+.logoutBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid var(--blue);
+    border-radius: 0.5rem;
+    background: var(--buttonBg);
+    transition:all 100ms ease-out;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    position: relative;
+    max-width: 100px;
+    left: calc(97vw - 100px);
 }
 
 #arrowProfilePage{
