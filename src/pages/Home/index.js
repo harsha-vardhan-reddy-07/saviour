@@ -7,7 +7,7 @@ import Logo from '../../components/Logo';
 import Navbar from '../../components/Navbar';
 
 import Postsection from '../../components/PostSection';
-
+import { postsData } from '../../Data/postsData';
 // import postsData from '../../Data/postsData';
 
 // import Postsection from '../../components/Postsection';
@@ -43,7 +43,7 @@ function Home() {
 
       <Logo />
       <Navbar createPostToggle={createPostToggle} setInputButtonsDisplay = {setInputButtonsDisplay} setCreateInputType = {setCreateInputType} />
-      <Postsection commentToggle = {commentToggle}/>
+      <Postsection commentToggle = {commentToggle} postsData = {postsData}  />
       <Comments isCommentBoxOpen = {isCommentBoxOpen} commentToggle = {commentToggle} />
       <CreatePost isCreatePostOpen = {isCreatePostOpen} createPostToggle={createPostToggle} inputButtonsDisplay = {inputButtonsDisplay} setInputButtonsDisplay = {setInputButtonsDisplay} createInputType = {createInputType} setCreateInputType = {setCreateInputType} />
       {/* <Suggestions />

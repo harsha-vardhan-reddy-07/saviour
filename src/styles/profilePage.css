@@ -1,0 +1,28 @@
+.profilePageNav{
+    z-index: 7;
+    position: fixed;
+    top: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-family: 'Padauk', sans-serif;
+    width: fit-content;
+}
+
+#arrowProfilePage{
+    margin-right: 5vw;
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 900px) {
+    #postSectionInProfilePage{
+        position: absolute;
+        top: 90vh !important;
+        left: 0;
+    }
+}
+
+
+

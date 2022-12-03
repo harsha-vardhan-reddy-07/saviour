@@ -1,0 +1,13 @@
+.googleLoginBtn{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    cursor: pointer;
+}
+.loginPageHead{
+    position: absolute;
+    top: 2vh;
+    font-size: 2rem;
+    z-index: 9999;
+    font-family: 'Padauk', sans-serif;
+}

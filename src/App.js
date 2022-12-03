@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
 import './styles/App.css';
 
 function App() {
@@ -13,7 +15,9 @@ function App() {
       <div className="blur2" ></div>
       
         <Routes>
-          <Route exact path="/" element={<Home />}/>
+          <Route exact path="/" element={<Home />} />
+          <Route path='/profile' element={<Profile/>} />
+          <Route path='/login' element={<Login/>} />
         </Routes>
     </div>
     </BrowserRouter>

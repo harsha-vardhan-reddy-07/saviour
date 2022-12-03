@@ -75,6 +75,9 @@
     left: -25vw;
     z-index: 3;
   }
+  .freespace{
+    height: 9vh;
+  }
 }
 
 
