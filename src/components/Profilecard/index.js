@@ -2,26 +2,21 @@ import React from "react";
 import Cover from "../../img/coverpic.jpeg";
 import Profile from "../../img/harsha.jpg";
 import "../../styles/ProfileCard.css";
-
-  
-  
-  
-    const openProfilePage = () => {
-        // history.push("/profile")
-        alert("hiii");
-    }
+import { UserAuth } from "../../Context/AuthContext";
 
 
 const Profilecard = () => {
+
+  const {user} = UserAuth();
   return (
-    <div className="ProfileCard" onClick={openProfilePage}>
+    <div className="ProfileCard">
       <div className="ProfileImages">
         <img src={Cover} alt="" className="coverPic" />
         <img src={Profile} alt="" />
       </div>
 
       <div className="ProfileName" >
-        <span>Harsha</span>
+        <span>{user.displayName}</span>
         <span>Eat🤤|Sleep😴|Repeat😉</span>
       </div>
 
