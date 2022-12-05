@@ -1,12 +1,37 @@
-.googleLoginBtn{
-    position: absolute;
-    top: 12vh;
-    cursor: pointer;
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.googleLoginBtn{
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 3;
+    border: 1px solid rgb(130, 200, 249);
+    border-radius: 2rem;
+    background-color: #fff;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+
+}
+
+
+
 .loginPageHead{
-    position: absolute;
-    top: 2vh;
+    /* position: absolute;
+    top: 2vh; */
     font-size: 2rem;
     z-index: 9999;
     font-family: 'Padauk', sans-serif;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ababab;
 }

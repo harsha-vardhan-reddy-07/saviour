@@ -1,43 +1,37 @@
-import React, { useEffect } from 'react'
-import '../../styles/loginPage.css'
-import GoogleButton from 'react-google-button'
+import React, { useEffect } from "react";
+import "../../styles/loginPage.css";
+import GoogleButton from "react-google-button";
 
-import { UserAuth } from '../../Context/AuthContext'
-import { useNavigate } from 'react-router-dom'
+import { UserAuth } from "../../Context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-
-  const {googleSignIn, user} = UserAuth();
+  const { googleSignIn, user } = UserAuth();
   const navigate = useNavigate();
 
   const handleGoogleSignIn = async () => {
-    try{
+    try {
       await googleSignIn();
-      
-
-    }catch(error){
+    } catch (error) {
       console.log(error);
     }
   };
 
   useEffect(() => {
-    if(user != null){
-      navigate('/');
+    if (user != null) {
+      navigate("/");
     }
   }, [user, navigate]);
 
-
   return (
-    <>
-
-        <h3 className='loginPageHead'>Login Page</h3>
-        <div className='googleLoginBtn'>
-        <GoogleButton  onClick={handleGoogleSignIn}  />
-        </div>
-
-
-    </>
-  )
-}
+    <div className="container">
+      <h1>Saviour Network</h1>
+      <div className="googleLoginBtn">
+        <h3 className="loginPageHead">Login Page</h3>
+        <GoogleButton onClick={handleGoogleSignIn} />
+      </div>
+    </div>
+  );
+};
 
 export default Login;
