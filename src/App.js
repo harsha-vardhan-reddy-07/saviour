@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './Context/AuthContext';
 import Home from './pages/Home';
@@ -6,6 +7,8 @@ import Profile from './pages/Profile';
 import './styles/App.css';
 
 function App() {
+
+
 
   return (
     <>
@@ -18,8 +21,8 @@ function App() {
         
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path='/profile' element={<Profile/>} />
-            <Route path='/login' element={<Login/>} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/login' element={<Login />} />
           </Routes>
       </div>
       </BrowserRouter>

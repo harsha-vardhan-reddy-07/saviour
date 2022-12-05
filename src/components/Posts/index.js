@@ -5,6 +5,11 @@ import { BiCommentDetail } from "react-icons/bi";
 import { FiSend } from "react-icons/fi";
 import { FaGlobeAmericas } from "react-icons/fa";
 import { HiSpeakerphone } from "react-icons/hi";
+import { UserAuth } from "../../Context/AuthContext";
+import { collection, doc, getDocs, onSnapshot, query } from "firebase/firestore";
+import { db } from '../../firebase';
+import { useEffect } from 'react';
+
 
 
 
@@ -99,6 +104,7 @@ const Posts = ({postsData, commentToggle}) => {
       }
   }
 
+  
 
   return (
     <>
@@ -124,7 +130,8 @@ const Posts = ({postsData, commentToggle}) => {
 
 
         <div className="detail">
-            <div className="desccol datacol" ><span className="username" name='username'>{postsData.username} </span>
+        {/* <span className="username" name='username'>{postsData.username} </span> */}
+            <div className="desccol datacol" >
             <div className='descdataWithBtn'><label htmlFor='username' className="desc labeldata" id='desc'>{isReadMoreShownDesc ? postsData.description : postsData.description.substr(0, limitdesc) + "....."}</label>
             <button id='viewMoreDesc' className='viewMore' onClick={toggledesc} >{descLen > limitdesc ? (isReadMoreShownDesc ? "View less" : "View more") : '' }</button></div></div>
             <div className="namecol datacol " style = { kidPostFeatures}><span className="name datatitle" name='name'>Name: </span>
@@ -151,4 +158,4 @@ const Posts = ({postsData, commentToggle}) => {
 
 }
 
-export default Posts
+export default Posts;
