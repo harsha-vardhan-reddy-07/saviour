@@ -9,10 +9,11 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 
-const Profilecard = ({appUserId}) => {
+const Profilecard = () => {
 
 
-  const {user} = UserAuth();
+  // const {user} = UserAuth();
+
 
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
@@ -24,22 +25,36 @@ const Profilecard = ({appUserId}) => {
 
   
     
-  useEffect(() => {
-      if (user !== null) {
-            onSnapshot(doc(db, "users", user.uid), (doc) => {
-            const userData = doc.data();
-            setName(userData.name);
-            setBio(userData.bio);
-            setProfileImg(userData.profilePic);
-            setFollowers(userData.followers);
-            setFollowing(userData.following);
-            setPosts(userData.posts);
+  // useEffect(() => {
+  //     // if (user !== null) {
+  //     //       onSnapshot(doc(db, "users", user.uid), (doc) => {
+  //     //       const userData = doc.data();
+  //     //       setName(userData.name);
+  //     //       setBio(userData.bio);
+  //     //       setProfileImg(userData.profilePic);
+  //     //       setFollowers(userData.followers);
+  //     //       setFollowing(userData.following);
+  //     //       setPosts(userData.posts);
           
-        });
+  //     //   });
       
-      }
+  //     // }
+  //     if (id){
+  //       console.log(id);
+      
+  //           getDoc(doc(db, 'users', id)).then((doc) =>{
+  //           const userData = doc.data();
+  //           setName(userData.name);
+  //           setBio(userData.bio);
+  //           setProfileImg(userData.profilePic);
+  //           setFollowers(userData.followers);
+  //           setFollowing(userData.following);
+  //           setPosts(userData.posts);
+  //           console.log(userData);
+  //         })
+  //     }
    
-  }, [user]);
+  // }, [user]);
 
   //   id = user.uid;
   //   if (id !== ''){

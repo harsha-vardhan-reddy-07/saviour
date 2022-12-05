@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { db } from '../../firebase'
 import { doc, getDoc, setDoc } from "firebase/firestore";
+import loginImg from '../../img/loginImg.png'
 
 const Login = () => {
 
@@ -49,11 +50,15 @@ const Login = () => {
 
   return (
     <>
+<h1 className='loginTitle'>The Saviour Network</h1>
+<div className="container">
 
-        <h3 className='loginPageHead'>Login Page</h3>
-        <div className='googleLoginBtn'>
-        <GoogleButton  onClick={handleGoogleSignIn}  />
-        </div>
+      <div className="googleLoginBtn">
+        <img className='loginImg' src={loginImg} alt="" />
+        <h3 className="loginPageHead">Join now!!</h3>
+        <GoogleButton onClick={handleGoogleSignIn} />
+      </div>
+    </div>
 
 
     </>

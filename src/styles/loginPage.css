@@ -1,12 +1,64 @@
-.googleLoginBtn{
+.container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
-    top: 12vh;
-    cursor: pointer;
+    top: 15vh;
+    
 }
+.googleLoginBtn{
+    width: 24vw;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 1rem 0 2rem 0 ;
+    margin-left: 38vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 3;
+    border: 1px solid rgb(130, 200, 249);
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+    background: #faf3f3;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    opacity: 0.9;
+
+}
+
+
+
 .loginPageHead{
-    position: absolute;
-    top: 2vh;
+    /* position: absolute;
+    top: 2vh; */
     font-size: 2rem;
     z-index: 9999;
     font-family: 'Padauk', sans-serif;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ababab;
+}
+.loginTitle{
+    font-size: 2.7rem;
+    position: absolute;
+    top: 2vh;
+    z-index: 999;
+    font-family: 'Kenia', cursive;
+}
+.loginImg{
+    height: 35vh;
+}
+@media screen and (max-width: 500px) {
+    .googleLoginBtn{
+        width: 80vw;
+        height: 25rem;
+        margin-left: 5vw;
+    }
+    .loginImg{
+        height: 25vh;
+    }
 }
