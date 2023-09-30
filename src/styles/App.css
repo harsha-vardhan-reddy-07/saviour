@@ -25,7 +25,7 @@
   overflow: hidden;
   color: var(--black);
   padding: 1rem 1rem;
-  height: 100%;
+  height: 100vh;
   background-color: #f3f3f3;
 }
 
@@ -38,6 +38,7 @@
   width: 100vw;
   opacity: 1;
   z-index: 5;
+  display: block;
 }
 
 .blur1{
